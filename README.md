@@ -68,28 +68,6 @@ The microcontroller hosts or interacts with a web interface that:
 - Web browser for interface
 - Ethernet/SD/Wiznet modules (depending on setup)
 
-### Build & Flash
-```bash
-make
-avrdude -p atmega256rfr2 -c your_programmer -U flash:w:your_project.hex
-````
-
-### Example Usage
-
-1. Connect the board to Ethernet.
-2. Open the web UI in your browser.
-3. View current config settings.
-4. Change a value (e.g. RF channel) and click "Save".
-5. The value is sent to the microcontroller and applied.
-
----
-
-## 📌 Notes
-
-* Ensure proper pinout and voltage compatibility when connecting SPI devices.
-* Make sure the `F_CPU` macro is correctly set in your project for accurate baudrate calculations.
-* Web server functionality can be provided by Wiznet Ethernet module or externally.
-
 ---
 
 ## 📄 License
@@ -98,11 +76,6 @@ This project is open-source. You are free to use, modify, and distribute it unde
 
 ---
 
-## 🙋‍♂️ Questions / Issues
-
-Feel free to [open an issue](https://github.com/your-username/your-repo/issues) or contact me for support or suggestions.
-
-```
 
 
 
