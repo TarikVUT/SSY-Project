@@ -19,25 +19,6 @@
 #include "wizchip_conf.h"
 #include "globals.h"
 
-/* Unavailable Pins  (W5500-EVB component preempted) */
-// >> UART Rx/Tx 		: D0 (Rx), D1 (Tx)
-// >> W5500 SPI(SPI0)	: D11 (MOSI), D12 (MISO), D13 (SCK)
-
-/* On-board Devices */
-// >> Input		: D14 (SW1) / D15 (SW2)
-// >> Input		: AIN (Potentiometer / TEMP.Sensor)
-// >> Output	: D8 (LED R) / D9 (LED G) / D10 (LED B)
-
-/* NXP LPC11Exx GPIO functions */
-// GPIO: Pin state
-//Chip_GPIO_GetPinState(LPC_GPIO, dio_ports[pin], dio_pins[pin]);
-//Chip_GPIO_SetPinState(LPC_GPIO, dio_ports[pin], dio_pins[pin], true);
-//Chip_GPIO_SetPinState(LPC_GPIO, dio_ports[pin], dio_pins[pin], false);
-
-// GPIO: Pin direction
-//Chip_GPIO_GetPinDIR((LPC_GPIO, dio_ports[pin], dio_pins[pin]);
-//Chip_GPIO_SetPinDIROutput(LPC_GPIO, dio_ports[pin], dio_pins[pin]);
-//Chip_GPIO_SetPinDIRInput(LPC_GPIO, dio_ports[pin], dio_pins[pin]);
 
 // Pre-defined Get CGI functions
 //void make_json_dio(uint8_t * buf, uint16_t * len, uint8_t pin);

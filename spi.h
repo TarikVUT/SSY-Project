@@ -10,20 +10,6 @@
 #define SPI_WAITFOREOTx() do { while (!(SPSR & BV(SPIF))); } while (0)
 #define SPI_WAITFOREORx() do { while (!(SPSR & BV(SPIF))); } while (0)
 
-//M128
-//#define SCK            1  /* - Output: SPI Serial Clock (SCLK) - ATMEGA128 PORTB, PIN1 */
-//#define MOSI           2  /* - Output: SPI Master out - slave in (MOSI) - ATMEGA128 PORTB, PIN2 */
-//#define MISO           3  /* - Input:  SPI Master in - slave out (MISO) - ATMEGA128 PORTB, PIN3 */
-//#define CSN            0  /*SPI - SS*/
-//#define FLASH_CS       6       /* PB.6 Output as CS*/
-
-
-// //M644p/M1284p
-// #define SCK            7  /* - Output: SPI Serial Clock (SCLK) - ATMEGA644/1284 PORTB, PIN7 */
-// #define MOSI           5  /* - Output: SPI Master out - slave in (MOSI) -  ATMEGA644/1284 PORTB, PIN5 */
-// #define MISO           6  /* - Input:  SPI Master in - slave out (MISO) -  ATMEGA644/1284 PORTB, PIN6 */
-// #define CSN            4  /*SPI - SS*/
-
 
 // ATmega256RFR2 SPI pin definitions
 #define SCK            1  /* PB1: SPI Clock */
@@ -31,12 +17,6 @@
 #define MISO           3  /* PB3: Master In, Slave Out */
 #define CSN            0  /* PB0: SPI Slave Select */
 
-//#define FLASH_CS       3       /* PB.2 Output as CS*/
-//#define FLASH_CS       2       /* PB.2 Output as CS*/
-//#define CAN_CS         1       /* PB.1 Output as CS for CAN MCP2515*/
-
-//#define SPI_FLASH_ENABLE()  ( PORTB &= ~BV(FLASH_CS) )
-//#define SPI_FLASH_DISABLE() ( PORTB |=  BV(FLASH_CS) )
 
 //#define WIZNET_CS       3       /* PB.3 Output as CS for Wiznet ETHERNET*/
 #define WIZNET_CS      4  /* PB4: CS for Wiznet */
