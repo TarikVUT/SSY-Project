@@ -1,5 +1,5 @@
 # SSY-Project
-The project for MPC-SSY
+The project for MPC-SSY (HTTP Server)
 
 ---
 
